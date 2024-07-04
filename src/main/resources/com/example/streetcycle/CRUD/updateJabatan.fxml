@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="832.0" prefWidth="1466.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.streetcycle.CRUD.updateJabatanController">
+   <children>
+      <ImageView fx:id="imageview1" fitHeight="847.0" fitWidth="1466.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Gambar/jabatandoang.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="102.0" layoutY="188.0" prefHeight="26.0" prefWidth="125.0" text="Search ID                   :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearchidJabatan" layoutX="230.0" layoutY="188.0" />
+      <TextField fx:id="txtSearchnamaJabatan" layoutX="230.0" layoutY="222.0" />
+      <RadioButton fx:id="rbidJabatan" layoutX="102.0" layoutY="259.0" mnemonicParsing="false" text="ID Jabatan" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></RadioButton>
+      <TableView fx:id="tableJabatan" layoutX="102.0" layoutY="339.0" prefHeight="402.0" prefWidth="560.0">
+         <columns>
+            <TableColumn fx:id="tblidJab" prefWidth="127.5" text="ID Jabatan" />
+            <TableColumn fx:id="tblnamaJab" prefWidth="144.0" text="Nama Jabatan" />
+         </columns>
+      </TableView>
+      <Label layoutX="102.0" layoutY="222.0" prefHeight="26.0" prefWidth="125.0" text="Search Nama             :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtnamaJabatan" layoutX="935.0" layoutY="366.0" prefHeight="25.0" prefWidth="274.0" />
+      <Button fx:id="btnUpdate" layoutX="904.0" layoutY="503.0" mnemonicParsing="false" onAction="#onbtnUpdateClick" prefHeight="25.0" prefWidth="225.0" text="Update" />
+      <Button fx:id="btnDelete" layoutX="904.0" layoutY="535.0" mnemonicParsing="false" onAction="#onbtnDeleteClick" prefHeight="25.0" prefWidth="225.0" text="Delete" />
+      <Button fx:id="btnBatal" layoutX="904.0" layoutY="567.0" mnemonicParsing="false" onAction="#onbtnBatalClick" prefHeight="25.0" prefWidth="225.0" text="Cancel" />
+      <TextField fx:id="txtidJab" disable="true" layoutX="935.0" layoutY="316.0" prefHeight="25.0" prefWidth="274.0" />
+      <RadioButton fx:id="rbNama" layoutX="102.0" layoutY="293.0" mnemonicParsing="false" text="Nama Jabatan" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="779.0" layoutY="316.0" prefHeight="26.0" prefWidth="149.0" text="ID Jabatan                :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="779.0" layoutY="366.0" prefHeight="26.0" prefWidth="149.0" text="Nama Jabatan          :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnKeluar" layoutX="937.0" layoutY="630.0" mnemonicParsing="false" onAction="#onBtnKeluar" prefHeight="33.0" prefWidth="160.0" style="-fx-background-color: #778899;" text="EXIT" textFill="#f8f5f5">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

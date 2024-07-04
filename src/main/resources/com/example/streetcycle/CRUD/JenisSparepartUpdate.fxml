@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="UpdateJSparePart" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.streetcycle.CRUD.JenisSparepartUpdate">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutX="1.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Gambar/JnsSparepart.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="173.0" layoutY="294.0" text="Cari ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="173.0" layoutY="376.0" text="Cari Nama">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCariID" layoutX="352.0" layoutY="285.0" prefHeight="45.0" prefWidth="336.0" />
+      <TextField fx:id="txtCariNama" layoutX="352.0" layoutY="367.0" prefHeight="45.0" prefWidth="336.0" />
+      <Label layoutX="172.0" layoutY="469.0" text="Cari Berdasarkan :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="RBJenis" layoutX="168.0" layoutY="505.0" mnemonicParsing="false" text="ID Jenis">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="RBNama" layoutX="168.0" layoutY="550.0" mnemonicParsing="false" text="Nama">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <TableView fx:id="TBVJenisSparepart" layoutX="233.0" layoutY="609.0" prefHeight="375.0" prefWidth="319.0">
+         <columns>
+            <TableColumn fx:id="colIdJenisSparepart" prefWidth="153.0" text="ID Jenis Sparepart" />
+            <TableColumn fx:id="colNamaJenisSparepart" prefWidth="165.0" text="Nama Jenis Sparepart" />
+         </columns>
+      </TableView>
+      <Label layoutX="973.0" layoutY="286.0" text="ID Jenis Sparepart">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="973.0" layoutY="399.0" prefHeight="27.0" prefWidth="183.0" text="Nama Jenis Sparepart">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtJenisSparePart" layoutX="1186.0" layoutY="277.0" prefHeight="45.0" prefWidth="519.0" />
+      <TextField fx:id="txtNamaJenis" layoutX="1192.0" layoutY="390.0" prefHeight="45.0" prefWidth="519.0" />
+      <Button fx:id="btnUpdate" layoutX="1130.0" layoutY="577.0" mnemonicParsing="false" onAction="#onBtnUpdateClick" prefHeight="39.0" prefWidth="408.0" text="Update">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="1130.0" layoutY="659.0" mnemonicParsing="false" onAction="#onBtnDeleteClick" prefHeight="39.0" prefWidth="408.0" text="Delete">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBatal" layoutX="1130.0" layoutY="747.0" mnemonicParsing="false" onAction="#onBtnBatalClick" prefHeight="39.0" prefWidth="408.0" text="Clear">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="807.0" layoutY="153.0" text="READ, UPDATE, DELETE" textFill="#868181">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnKeluar" layoutX="1252.0" layoutY="861.0" mnemonicParsing="false" onAction="#onBtnKeluar" prefHeight="39.0" prefWidth="177.0" style="-fx-background-color: #778899;" text="EXIT" textFill="#f8f5f5">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

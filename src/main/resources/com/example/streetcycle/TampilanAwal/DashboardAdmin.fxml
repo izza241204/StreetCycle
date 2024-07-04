@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.streetcycle.TampilanAwal.DashboardAdminController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../awal/DB_Admin.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnKeluar" layoutX="845.0" layoutY="1007.0" mnemonicParsing="false" onAction="#onBtnKeluar" prefHeight="39.0" prefWidth="177.0" style="-fx-background-color: #778899;" text="EXIT" textFill="#f8f5f5">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="24.0" />
+         </font></Button>
+      <Button fx:id="btnUpdateAlat" layoutX="558.0" layoutY="270.0" mnemonicParsing="false" onAction="#OnbtnUpdateAlat" prefHeight="39.0" prefWidth="258.0" style="-fx-background-color: Transparant;" />
+      <Button fx:id="btnCariAlat" layoutX="544.0" layoutY="214.0" mnemonicParsing="false" onAction="#OnbtnCariAlat" prefHeight="39.0" prefWidth="270.0" style="-fx-background-color: Transparant;" />
+      <Button fx:id="btnInputMotor" layoutX="1064.0" layoutY="221.0" mnemonicParsing="false" onAction="#OnbtnInputMotor" prefHeight="39.0" prefWidth="278.0" style="-fx-background-color: Transparat;" />
+      <Button fx:id="btnUpdateTransaksi" layoutX="1058.0" layoutY="711.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="278.0" style="-fx-background-color: Transparat;" />
+      <Button fx:id="btnUpdateSparepart" layoutX="540.0" layoutY="701.0" mnemonicParsing="false" onAction="#OnbtnUpdateSparepart" prefHeight="39.0" prefWidth="278.0" style="-fx-background-color: Transparat;" />
+      <Button fx:id="btnCariSparepart" layoutX="548.0" layoutY="646.0" mnemonicParsing="false" onAction="#OnbtnCariSparepart" prefHeight="39.0" prefWidth="278.0" style="-fx-background-color: Transparat;" />
+      <Button fx:id="BtnInputJenisAlat" layoutX="548.0" layoutY="420.0" mnemonicParsing="false" onAction="#OnBtnInputJenisAlat" prefHeight="39.0" prefWidth="278.0" style="-fx-background-color: Transparat;" />
+      <Button fx:id="btnInputTransaksi" layoutX="1058.0" layoutY="646.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="278.0" style="-fx-background-color: Transparat;" />
+      <Button fx:id="btnUpdateJenis" layoutX="1064.0" layoutY="484.0" mnemonicParsing="false" onAction="#OnbtnUpdateJenis" prefHeight="39.0" prefWidth="278.0" style="-fx-background-color: Transparat;" />
+      <Button fx:id="btnInputJenis" layoutX="1058.0" layoutY="420.0" mnemonicParsing="false" onAction="#OnbtnInputJenis" prefHeight="39.0" prefWidth="278.0" style="-fx-background-color: Transparat;" />
+      <Button fx:id="btnUpdateJenisSparePart" layoutX="540.0" layoutY="926.0" mnemonicParsing="false" onAction="#OnbtnUpdateJenisSparePart" prefHeight="39.0" prefWidth="278.0" style="-fx-background-color: Transparat;" />
+      <Button fx:id="btnInputJenisSparepart" layoutX="548.0" layoutY="858.0" mnemonicParsing="false" onAction="#OnbtnInputJenisSparepart" prefHeight="39.0" prefWidth="278.0" style="-fx-background-color: Transparat;" />
+      <Button fx:id="btnUpdateJenisAlat" layoutX="540.0" layoutY="484.0" mnemonicParsing="false" onAction="#OnbtnUpdateJenisAlat" prefHeight="39.0" prefWidth="278.0" style="-fx-background-color: Transparat;" />
+      <Button fx:id="BtnIUpdateTP" layoutX="1055.0" layoutY="924.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="278.0" style="-fx-background-color: Transparat;" />
+      <Button fx:id="btnInputTP" layoutX="1055.0" layoutY="865.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="278.0" style="-fx-background-color: Transparat;" />
+      <Button fx:id="btnUpdateMotor" layoutX="1062.0" layoutY="275.0" mnemonicParsing="false" onAction="#OnbtnUpdateMotor" prefHeight="47.0" prefWidth="270.0" style="-fx-background-color: Transparat;" />
+   </children>
+</AnchorPane>

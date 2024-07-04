@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.streetcycle.CRUD.inputKaryawanController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="830.0" fitWidth="1477.0" layoutX="4.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Gambar/Karyawan-_6_.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="498.0" layoutY="264.0" prefHeight="25.0" prefWidth="170.0" text="ID Karyawan                 :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtidKaryawan" disable="true" layoutX="670.0" layoutY="264.0" prefHeight="25.0" prefWidth="306.0" />
+      <Label layoutX="499.0" layoutY="304.0" text="ID Jabatan                    :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSimpan" layoutX="628.0" layoutY="651.0" mnemonicParsing="false" onAction="#onbtnSimpanClick" prefHeight="25.0" prefWidth="286.0" text="Save">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBatal" layoutX="628.0" layoutY="698.0" mnemonicParsing="false" onAction="#onbtnBatalClick" prefHeight="25.0" prefWidth="286.0" text="Clear">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtnamaKaryawan" layoutX="670.0" layoutY="341.0" prefHeight="27.0" prefWidth="306.0" />
+      <TextField fx:id="txtUsername" layoutX="670.0" layoutY="383.0" prefHeight="27.0" prefWidth="306.0" />
+      <TextField fx:id="txtnoHp" layoutX="670.0" layoutY="468.0" prefHeight="27.0" prefWidth="306.0" />
+      <TextField fx:id="txtEmail" layoutX="670.0" layoutY="512.0" prefHeight="27.0" prefWidth="306.0" />
+      <TextField fx:id="txtAlamat" layoutX="670.0" layoutY="554.0" prefHeight="27.0" prefWidth="306.0" />
+      <ComboBox fx:id="cbidJabatan" layoutX="670.0" layoutY="302.0" prefHeight="25.0" prefWidth="306.0" />
+      <Label layoutX="497.0" layoutY="427.0" prefHeight="25.0" prefWidth="170.0" text="Password                      :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="497.0" layoutY="384.0" prefHeight="25.0" prefWidth="170.0" text="Username                     :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="498.0" layoutY="342.0" prefHeight="25.0" prefWidth="170.0" text="Nama Karyawan          :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="496.0" layoutY="469.0" prefHeight="25.0" prefWidth="170.0" text="No HP                           :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="495.0" layoutY="513.0" prefHeight="25.0" prefWidth="170.0" text="Email                             :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="495.0" layoutY="555.0" prefHeight="25.0" prefWidth="170.0" text="Alamat                          :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtPassword" layoutX="670.0" layoutY="421.0" prefHeight="31.0" prefWidth="306.0" />
+      <Button fx:id="btnKeluar" layoutX="683.0" layoutY="759.0" mnemonicParsing="false" onAction="#onBtnKeluar" prefHeight="39.0" prefWidth="177.0" style="-fx-background-color: #778899;" text="EXIT" textFill="#f8f5f5">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="705.0" layoutY="112.0" prefHeight="40.0" prefWidth="70.0" text="CREATE" textAlignment="CENTER" textFill="#fffefe">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
